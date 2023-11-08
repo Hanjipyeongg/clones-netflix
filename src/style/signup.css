@@ -1,0 +1,84 @@
+.SignUpBackground {
+  position: relative;
+  height: 100%;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+.login-logo {
+  cursor: pointer;
+  position: fixed;
+  left: 2%;
+  top: 0;
+  width: 138px;
+  object-fit: contain;
+  margin-top: -8px;
+  padding-left: 21px;
+}
+.login-logo:hover {
+  opacity: 0.9;
+}
+.gradient {
+  width: 100%;
+  z-index: 1;
+  height: 115vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.SignUpScreen {
+  max-width: 300px;
+  padding: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  right: 12%;
+}
+.SignUpScreen > form {
+  display: grid;
+  flex-direction: column;
+}
+.SignUpScreen > form > h1 {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.SignUpScreen > form > input {
+  outline-width: 0;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+}
+.SignUpScreen > form > button {
+  padding: 16px 20px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.SignUpScreen > form > h4 {
+  margin-top: 14px;
+}
+.span-grey {
+  color: grey;
+}
+.span-link {
+  color: #fff;
+}
+.span-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

@@ -1,0 +1,114 @@
+.login-screen {
+  position: relative;
+  height: 100%;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/757ab38f-5d08-40bc-b3eb-eaba63ed8203/93c34f94-56c8-40a7-8b2e-b4aac6427977/GB-en-20210125-popsignuptwoweeks-perspective_alpha_website_medium.jpg")
+    center no-repeat;
+  background-size: cover;
+}
+.login-logo {
+  cursor: pointer;
+  position: fixed;
+  left: 2%;
+  top: 0;
+  width: 138px;
+  object-fit: contain;
+  margin-top: -8px;
+  padding-left: 21px;
+}
+.login-button {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  cursor: pointer;
+}
+.login-gradient {
+  width: 100%;
+  z-index: 1;
+  height: 115vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+.login-body {
+  max-width: 300px;
+  padding: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(0, 0, 0, 0.85);
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  right: 12%;
+}
+.login-body > form {
+  display: grid;
+  flex-direction: column;
+}
+.login-body > form > h1 {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 25px;
+}
+.login-body > form > input {
+  outline-width: 0;
+  height: 40px;
+  margin-bottom: 14px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 15px;
+}
+.login-body > form > button {
+  padding: 16px 20px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #e50914;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.login-body > form > h4 {
+  margin-top: 14px;
+}
+.span-grey {
+  color: grey;
+}
+.span-link {
+  color: #fff;
+}
+.span-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.login-input > form > input {
+  padding: 10px;
+  outline-width: 0;
+  height: 30px;
+  width: 30%;
+  border: none;
+  max-width: 600px;
+}
+.login-input {
+  margin: 18px;
+}
+.button-input {
+  padding: 18px 20px;
+  font: size 1rem;
+  color: #fff;
+  background-color: #e50914;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  gap: 4px;
+}
