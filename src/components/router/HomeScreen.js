@@ -2,6 +2,7 @@ import Banner from "../banner/Banner";
 import Rows from "../layout/Rows";
 import Navbar from "../navbar/Nav";
 import request from "../../common/API/request";
+import Footer from "../footer"
 function HomeScreen() {
   return (
     <div className="Home">
@@ -20,6 +21,7 @@ function HomeScreen() {
         <Rows title="Horror Movies" fetchUrl={request.fetchHorrorMovies} />
         <Rows title="Romance Movies" fetchUrl={request.fetchRomanceMovies} />
         <Rows title="Documentaries" fetchUrl={request.fetchDocumentMovies} />
+        <Footer />
       </header>
     </div>
   );

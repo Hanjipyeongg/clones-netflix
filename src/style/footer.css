@@ -1,0 +1,59 @@
+.container {
+  height: 260px;
+  margin-top: 80px;
+}
+.icons-sosmed {
+  padding-left: 50px;
+}
+.icons-sosmed > a > span {
+  font-size: 22px;
+  cursor: pointer;
+  padding-left: 20px;
+  color: white;
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+.icons-sosmed > a > span:hover {
+  color: red;
+}
+.icons-youtube {
+  font-size: 24px;
+  padding-top: 2px;
+}
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 48px;
+  padding-top: 10px;
+}
+.content-footer {
+  font-size: 15px;
+  cursor: pointer;
+  color: rgb(141, 137, 137);
+  flex: 1;
+}
+.content-footer > p {
+  padding-left: 14px;
+  margin-top: 12px;
+}
+.content-footer > p > a {
+  font-size: small;
+  margin-top: 12px;
+  color: rgb(141, 137, 137);
+  text-decoration: none;
+}
+.content-footer > p > a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  .content-footer {
+    flex: 1 0 50%; /* Set lebar menjadi 100% saat di perangkat mobile */
+  }
+}
+
+.end {
+  color: rgb(141, 137, 137);
+  margin-top: 46px;
+  font-size: 14px;
+  padding-left: 52px;
+}
