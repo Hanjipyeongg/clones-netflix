@@ -31,6 +31,10 @@
   transition: transform 450ms;
   cursor: pointer;
 }
+.movie-player {
+  background-color: black;
+  overflow: hidden;
+}
 .movie-title {
   padding-left: 12px;
   font-size: 26px;

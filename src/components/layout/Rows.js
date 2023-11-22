@@ -2,11 +2,15 @@ import React, { useEffect, useRef, useState } from "react";
 import axios from "../../common/API/axios";
 import "../../style/rows.css";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
+// import YouTube from "react-youtube";
+// import movieTrailer from "movie"
 function Rows({ title, fetchUrl, isLargeRow = false }) {
   const [movie, setMovie] = useState([]);
   const [trailer, setTrailer] = useState("");
   const [showControls, setShowControls] = useState(false);
   const [sliderPosition, setSliderPosition] = useState(0);
+  const [selectedMovie, setSelectedMovie] = useState(null);
+
   const listRef = useRef();
   const baseUrl = "https://image.tmdb.org/t/p/original";
   useEffect(() => {
@@ -28,12 +32,15 @@ function Rows({ title, fetchUrl, isLargeRow = false }) {
   const fetchYouTubeTrailer = async (film) => {
     try {
       // Ganti dengan kunci API TMDb Anda
-      const apiKey = "7efff132f25417f845d9875309dd6d6d";
+      // const apiKey = "7efff132f25417f845d9875309dd6d6d";
 
       // Mengambil data film dari API TMDb
-      const response = await axios.get(
-        `https://api.themoviedb.org/3/movie/${film.id}}/videos?${apiKey}language=en-US`
-      );
+      const response = await axios
+        .get(
+          `https://api.themoviedb.org/3/movie/${film.id}}/videos?${process.env.REACT_APP_API_KEY}language=en-US`
+        )
+        .then((res) => res.json)
+        .then((res) => console.log(res.data.results));
 
       // Mengekstrak URL trailer YouTube jika ada
       if (response.data.videos && response.data.videos.results.length === 0) {
@@ -45,7 +52,7 @@ function Rows({ title, fetchUrl, isLargeRow = false }) {
       setTrailer(""); // Setel trailer ke nilai kosong jika terjadi kesalahan
     }
   };
-
+  
   const handleClick = (film) => {
     fetchYouTubeTrailer(film);
   };
@@ -87,7 +94,15 @@ function Rows({ title, fetchUrl, isLargeRow = false }) {
           <MdChevronRight onClick={sliderRight} className="sliders" size={30} />
         </div>
       </div>
-      {/* <YouTube videoId={trailer} opts={opts} onReady={onReady} /> */}
+      {/* <ReactPlayer
+       url={}
+       height="80vh"
+       width="100vw"
+       controls={true}
+       className="movie-player"
+
+       
+       /> */}
     </div>
   );
 }

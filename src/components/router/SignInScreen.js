@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "../../style/login.css";
+import Footer from "../footer";
 import { auth } from "../../common/firebase";
 function SignInScreen() {
   const emailRef = useRef(null);
@@ -22,8 +23,8 @@ function SignInScreen() {
     window.location.assign("SignUp");
   };
   return (
-    <div className="SignUpBackground">
-      <div className="SignUpScreen">
+    <div className="login-screen">
+      <div className="login-body">
         <img
           className="login-logo"
           src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"

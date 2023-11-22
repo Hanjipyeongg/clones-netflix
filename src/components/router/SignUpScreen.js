@@ -27,17 +27,17 @@ function SignUpScreen() {
     window.location.assign("SignIn");
   };
   return (
-    <div className="login-screen">
-      <div className="login-background">
+    <div className="SignUpBackground">
+      <div>
         <img
           className="login-logo"
           src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
           alt="background-login"
           onClick={handlePage}
         />
-        <div className="login-gradient" />
+        <div className="gradient"/>
       </div>
-      <div className="login-body">
+      <div className="SignUpScreen">
         <>
           <form>
             <h1> Sign Up</h1>
