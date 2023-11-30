@@ -8,6 +8,7 @@
   justify-content: space-between;
   transition-timing-function: ease-in;
   transition: all 0.5s;
+   z-index: 100; 
 }
 .nav-block {
   background-color: #111;
@@ -38,4 +39,16 @@
   background-color: #e50914;
   border: none;
   cursor: pointer;
+}
+@media (max-width: 768px) {
+  .nav-logo {
+    width: 94px;
+  }
+  .nav-button {
+    width: 78px;
+    font-size: 0.9rem;
+    padding: 5px 10px;
+    height: 36px;
+    right: 32px;
+  }
 }

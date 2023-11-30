@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
 import "../../style/login.css";
-import Footer from "../footer";
 import { auth } from "../../common/firebase";
 function SignInScreen() {
   const emailRef = useRef(null);

@@ -7,17 +7,29 @@
   background-color: white;
   border-radius: 50%;
   color: black;
-  position: absolute;
-  right: 20px;
-  margin-top: -4px;
+  position:absolute;
+  left:36px;
+  margin-top: 60px;
+  bottom: auto;
+  opacity: 10;
+  cursor: pointer;
+  z-index: 10;
+}
+.sliders1 {
+  background-color: white;
+  border-radius: 50%;
+  color: black;
+  position:absolute;
+  right:36px;
+  margin-top: 60px;
   bottom: auto;
   opacity: 10;
   cursor: pointer;
   z-index: 10;
 }
 .group {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  nustify-content: space-evenly;
 }
 .sliders:hover {
   opacity: 100;
@@ -65,6 +77,7 @@
   overflow-y: hidden;
   overflow-x: scroll;
   padding: 18px;
+   width: 100%;
 }
 .row-images::-webkit-scrollbar {
   display: none;
@@ -78,4 +91,23 @@
 }
 .movie-picture-large:hover {
   transform: scale(1.09);
+}
+.custom-modal {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 700px;
+  height: 700px;
+  overflow-y: hidden;
+}
+.wrapper {
+  display: grid;
+}
+@media (max-width: 768px) {
+  .movie-title {
+    font-size:20px;
+  }
+  .movie-picture-large {
+    max-height: 200px;
+  }
 }
